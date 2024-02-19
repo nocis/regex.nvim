@@ -247,7 +247,7 @@ function M.highlight()
                 on_stdout = function(_, data)
                     for i, line in ipairs(data) do
                         if line ~= "" then
-                            print(line)
+                            -- print(line)
                             api.nvim_buf_add_highlight(M.list_buffer, 0, "reg_hg", k - 1, 0, -1)
                         end
                     end
